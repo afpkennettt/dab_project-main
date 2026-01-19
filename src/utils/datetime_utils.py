@@ -11,7 +11,7 @@ def timestamp_to_date_col(spark, df, timestamp_col, output_col):
         output_col (str): The name for the output column with the ride date.
     
     Returns:
-        DataFrame: A new DataFrame with the additional ride date column.
+        DataFrame: A new DataFrame with the additional ride date column..
     """
     # Use to_date to extract the date part of the timestamp
     return df.withColumn(output_col, to_date(col(timestamp_col)))
