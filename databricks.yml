@@ -44,10 +44,12 @@ targets:
       schema: prod
       dev_flag: false
     permissions:
-      - user_name: andrewkennett@akvisions.net
+      - user_name: d96f07a7-08a7-4047-b43e-f12d04538f43
         level: CAN_MANAGE
     presets:
         name_prefix: '[test] '
+    run_as:
+      service_principal_name: d96f07a7-08a7-4047-b43e-f12d04538f43
   prod:
     mode: production
     workspace:
@@ -59,6 +61,8 @@ targets:
       schema: prod
       dev_flag: false      
     permissions:
-      - user_name: andrewkennett@akvisions.net
+      - user_name: 41c3b301-9ace-4785-b8a4-7fb04855e08a
         level: CAN_MANAGE
+    run_as:
+      service_principal_name: 41c3b301-9ace-4785-b8a4-7fb04855e08a
 
