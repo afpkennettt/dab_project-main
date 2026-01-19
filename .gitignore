@@ -1,0 +1,9 @@
+.databricks/
+build/
+dist/
+__pycache__/
+*.egg-info
+scratch/**
+!scratch/README.md
+.venv*/
+.venv_*/
